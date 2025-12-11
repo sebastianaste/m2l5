@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabañas Rucahue</title>
+    <base href="./" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-info rounded-3">
+        <nav
+          class="navbar navbar-expand navbar-light bg-opacity-25 bg-light mt-4"
+        >
+          <a class="navbar-brand mx-2" href="#"> Cabañas Rucahue</a>
+          <div>
+            <ul class="navbar-nav mx-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reserva Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Visitanos en Yapo</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <section>
+            <div class="col-lg-6 my-5">
+              <h1 class="display-5 fw-bold text-danger">Cabañas Rucahue</h1>
+              <p class="lead mb-4">
+                Las cabañas más comodas en sector regional de Valdivia, ideal
+                para estudiantes o jovenes profesionales, equipada con todo lo
+                que necesitas.
+              </p>
+              <div class="d-grid gap-2 d-sm-flex container">
+                <button type="button" class="btn btn-success btn-lg px-4 gap-3">
+                  Reserva Online
+                </button>
+                <button type="button" class="btn btn-dark btn-lg px-4">
+                  Galeria de fotos
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <!-- seccion (semanticamente dividido) dedicada a describir las cabañas e informacion pertinente-->
+            <h2 class="text-danger">Ubicación privilegiada</h2>
+            <p>
+              <!-- parrafos, cualquier texto normal en el html se escribira así-->
+              Cómodas cabañas ubicadas en sector residencial céntrico. A cuadras
+              de Lider y bencineras, a pasos de gimnasio pacific.
+            </p>
+            <h2 class="text-danger">Interior</h2>
+            <p>Cabaña cuenta con:</p>
+            <ul>
+              <li>Wi-fi</li>
+              <li>2-3 Camas</li>
+              <li>Television</li>
+              <li>Calefacción</li>
+              <li>Agua caliente</li>
+              <li>Estacionamiento</li>
+            </ul>
+
+            <h2 class="text-danger">Fotos</h2>
+
+            <div class="container">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="img-fluid mx-auto"
+                  src="assets/img/cabaña.png"
+                  style="width: 400px; height: 300px; object-fit: cover"
+                />
+              </div>
+              <!-- forzando el width y height con css, el object fit arregla el fit de la imagen cuando la pagina es menor a las dimensiones de la imagen, por otro lado con bootstrap no se puede especificamente dejar este width y height (solo porcentajes)-->
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-dark btn-sm px-2 d-block mx-auto my-2"
+              onclick="alertInfo()"
+            >
+              Más info de la imagen
+            </button>
+          </section>
+
+          <article>
+            <!--seccion para colocar informacion extraida de otro sitio, embed, o similares, en este caso opiniones de usuarios (static en este caso)-->
+            <h2 class="text-danger">Opiniones de huespedes</h2>
+            <p>
+              "Excelente lugar, muy limpio...tranquilo.....super seguro....100 %
+              recomendable....." Eduardo Parra
+            </p>
+            <p>"Buen lugar, dueña muy amable y muy economico" diana moreno</p>
+            <p>
+              "Buen lugar, buena calefacción. Limpio y cerca de negocios y
+              servicentro." Jocelyn Arriagada
+            </p>
+          </article>
+
+          <footer>
+            <!-- footer incluye informacion de contacto y contenido no indispensable para el contenido de la pagina-->
+            <h3 class="text-danger">Datos de contacto:</h3>
+            <p>Ana Bustos</p>
+            <p>+56991*****1</p>
+            <h4 class="text-danger">2025-2026 Sebastian Aste.</h4>
+            <p>sebastianastebustos@gmail.com</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function alertInfo() {
+        alert("Imagen de Google Maps el año 2025");
+      }
+    </script>
+  </body>
+</html>
